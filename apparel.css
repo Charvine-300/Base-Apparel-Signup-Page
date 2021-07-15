@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url(https://fonts.google.com/specimen/Josefin+Sans);
+}
+
+#apparel-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+/*===========  ID Rules  ==========*/
+#logo-palace {
+    margin: 35px;
+    width: fit-content;
+}
+
+#apparel-info {
+    margin: 20px;
+    width: fit-content;
+}
+
+#hero-image {
+    margin: 0px;
+    max-height: fit-content;
+}
+
+
+
+/*===========  Class Rules  ==========*/
+.hero-image {
+    width: 100%;
+    margin: 0px;
+}
+
+
+
+/*===========  ELement Rules  ==========*/
+h1 {
+    font-weight: 600;
+    font-family: Josefin Sans;
+}
+
+
+
+/*===========  Animation and Pseudo Rules  ==========*/
