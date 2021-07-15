@@ -3,10 +3,10 @@ body {
     background-color: hsl(0, 0%, 100%);
 }
 
-@font-face {
+/*@font-face {
     font-family: "Josefin Sans";
     src: url(https://fonts.google.com/specimen/Josefin+Sans);
-}
+}*/
 
 #apparel-flexbox {
     display: flex;
@@ -44,8 +44,13 @@ body {
 
 /*===========  ELement Rules  ==========*/
 h1 {
+    font-size: 70px;
     font-weight: 600;
-    font-family: Josefin Sans;
+    text-align: center;
+    letter-spacing: 15px;
+    font-family: monospace;
+    color: hsl(0, 0%, 25%);
+
 }
 
 
