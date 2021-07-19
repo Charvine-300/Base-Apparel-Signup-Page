@@ -1,5 +1,6 @@
 body {
-    background-image: url("images/bg-pattern-desktop.svg");
+    margin: 0px;
+    background-color: hsl(0, 100%, 97%);
 }
 
 /*===========  ID Rules  ==========*/
@@ -10,6 +11,7 @@ body {
 }
 
 #desktop-logo {
+    float: left;
     max-width: 100%;
     max-height: 100%;
 }
@@ -22,13 +24,13 @@ body {
 }
 
 #apparel-info {
-    width: 50%;
+    width: 55%;
     height: 100%;
-    margin-top: 0px;
+    margin: 0px;
 }
 
 #submit-button {
-    margin-left: 22%;
+    margin-left: 20%;
 }
 
 #error-message {
@@ -39,12 +41,6 @@ body {
 }
 
 /*===========  Class Rules  ==========*/
-.desktop-arrangement {
-    width: 50%;
-    height: 100%;
-    margin: 0px auto;
-}
-
 .base-apparel {
     margin: 0%;
     max-width: 0px;
@@ -52,7 +48,7 @@ body {
 }
 
 .hero-image {
-    width: 43%;
+    width: 40%;
     height: 100%;
 }
 
@@ -60,11 +56,12 @@ body {
     display: block;
     max-width: 100%;
     max-height: 100%;
-    margin-bottom: 130px;
+    margin-right: auto;
+    margin-bottom: 150px;
 }
 
 .info-container {
-    width: 60%;
+    width: 50%;
     height: 100%;
     margin-left: 80px;
 }
@@ -73,9 +70,10 @@ body {
 
 /*===========  ELement Rules  ==========*/
 h1 {
-    font-size: 70px;
+    font-size: 80px;
     text-align: left;
-    line-height: 80px;
+    line-height: 85px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -88,4 +86,5 @@ p {
 input {
     width: 80%;
     margin-left: 0px;
+    background-color: hsl(0, 100%, 97%);
 }
