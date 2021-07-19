@@ -1,12 +1,19 @@
+::root {
+    transition: all 0.5s ease-in-out;
+}
+
 body {
     margin: 0px;
     background-color: hsl(0, 0%, 100%);
 }
 
-/*@font-face {
+@font-face {
+    font-style: normal;
     font-family: "Josefin Sans";
-    src: url(https://fonts.google.com/specimen/Josefin+Sans);
-}*/
+    src: local("Josefin Sans Light"), 
+    local("JosefinSans-Light"),
+    url("josefinsans.css");
+}
 
 #apparel-flexbox {
     display: flex;
@@ -17,14 +24,41 @@ body {
 
 
 /*===========  ID Rules  ==========*/
+#error {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+#error-message {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto 0px auto;
+}
+
+#snazzy-girl {
+    width: 100%;
+    height: 100%;
+}
+
 #logo-palace {
     margin: 35px;
+    padding-bottom: 30px;
+    height: fit-content;
     width: fit-content;
 }
 
+#desktop-logo {
+    margin: 0px;
+    max-height: 0px;
+    max-width: 0px;
+}
+
 #apparel-info {
-    margin: 20px;
-    width: fit-content;
+    width: 100%;
+    height: 100%;
+    margin: 40px auto 30px auto;
 }
 
 #hero-image {
@@ -32,27 +66,128 @@ body {
     max-height: fit-content;
 }
 
+#submit-button {
+    margin: 0px;
+    width: 80px;
+    height: 54px;
+    padding: 0px;
+    margin-left: 54%;
+    position: absolute;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid hsl(0, 0%, 100%);
+    background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 70%);
+}
+
 
 
 /*===========  Class Rules  ==========*/
-.hero-image {
+.desktop-arrangement {
     width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+.hero-image {
     margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.desktop-apparel {
+    max-width: 0px;
+    max-height: 0px;
+}
+
+.info-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+}
+
+.bistro-king {
+    float: right;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-inline-start: 7px;
+    color: hsl(0, 93%, 68%);
 }
 
 
 
 /*===========  ELement Rules  ==========*/
 h1 {
-    font-size: 70px;
-    font-weight: 600;
+    font-size: 38px;
+    line-height: 45px;
     text-align: center;
+    font-weight: bolder;
     letter-spacing: 15px;
-    font-family: monospace;
-    color: hsl(0, 0%, 25%);
+    color: hsl(0, 6%, 24%);
+    font-family: "Josefin Sans";
+}
 
+p {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: hsl(0, 36%, 70%);
+    font-family: "Josefin Sans";
+    margin: 20px auto 20px auto;
+}
+
+input {
+    width: 70%;
+    height: 10px;
+    padding: 20px;
+    display: block;
+    border-radius: 50px;
+    margin: 40px auto 15px auto;
+    border: 1px solid hsl(0, 36%, 70%);
 }
 
 
 
 /*===========  Animation and Pseudo Rules  ==========*/
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+#subscribe:focus {
+    outline: none;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border: 1px solid hsl(0, 0%, 100%);
+    background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%,  hsl(0, 74%, 85%) 90%);
+}
+
+
+
+/*===========  Media Queries Rules  ==========*/
+@media only screen and (orientation: landscape) {
+    #submit-button {
+        margin-left: 60%;
+    } 
+}
+
+@media only screen and (min-width: 540px)  and (orientation: landscape) {
+    #submit-button {
+        margin-left: 63%;
+    } 
+}
+
+@media only screen and (min-width: 512px)  and (max-width: 541px) {
+    #submit-button {
+        margin-left: 57%;
+    } 
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1400px) {
+    #submit-button {
+        margin-left: 65%;
+    }  
+}
+
+

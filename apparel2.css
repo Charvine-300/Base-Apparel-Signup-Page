@@ -1,0 +1,91 @@
+body {
+    background-image: url("images/bg-pattern-desktop.svg");
+}
+
+/*===========  ID Rules  ==========*/
+#apparel-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+}
+
+#desktop-logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#logo-palace {
+    margin: 0%;
+    padding: 0px;
+    max-width: 0px;
+    max-height: 0px;
+}
+
+#apparel-info {
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+}
+
+#submit-button {
+    margin-left: 22%;
+}
+
+#error-message {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto 0px 0px;
+}
+
+/*===========  Class Rules  ==========*/
+.desktop-arrangement {
+    width: 50%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.base-apparel {
+    margin: 0%;
+    max-width: 0px;
+    max-height: 0px;
+}
+
+.hero-image {
+    width: 43%;
+    height: 100%;
+}
+
+.desktop-apparel {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 130px;
+}
+
+.info-container {
+    width: 60%;
+    height: 100%;
+    margin-left: 80px;
+}
+
+
+
+/*===========  ELement Rules  ==========*/
+h1 {
+    font-size: 70px;
+    text-align: left;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+input {
+    width: 80%;
+    margin-left: 0px;
+}
